@@ -29,6 +29,7 @@
       <concept id="2468431357014947084" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Text" flags="ig" index="293xgL" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
@@ -631,6 +632,12 @@
         </node>
         <node concept="ljvvj" id="sJFSq8EinU" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="2dUJ5FwzJ20" role="2czzBI">
+          <property role="3F0ifm" value="&lt;press Enter to add objects&gt;" />
+          <node concept="VechU" id="2dUJ5Fw$ep1" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
         </node>
       </node>
       <node concept="l2Vlx" id="AJMlyQxqnu" role="2iSdaV" />
