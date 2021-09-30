@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="b1c7d06f-525d-43b5-9b0a-2fc8f7f076ba" name="jetbrains.mps.editor.contextActionsTool.lang.menus" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -14,9 +13,9 @@
     <import index="gfpf" ref="r:3c06b019-8c4c-4470-98d3-90053563daef(SpacePlanningDL.structure)" />
     <import index="hypd" ref="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="pvwr" ref="r:a12a0c65-79d5-48c1-ada9-9237ef170258(SpacePlanningDL.behavior)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
-    <import index="pvwr" ref="r:a12a0c65-79d5-48c1-ada9-9237ef170258(SpacePlanningDL.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -489,6 +488,88 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="2dUJ5Fw_bW0" role="3cqZAp">
+              <node concept="3cpWsn" id="2dUJ5Fw_bW1" role="3cpWs9">
+                <property role="TrG5h" value="selectAll" />
+                <node concept="3uibUv" id="2dUJ5Fw_bW2" role="1tU5fm">
+                  <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
+                </node>
+                <node concept="2ShNRf" id="2dUJ5Fw_bW3" role="33vP2m">
+                  <node concept="1pGfFk" id="2dUJ5Fw_bW4" role="2ShVmc">
+                    <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                    <node concept="Xl_RD" id="2dUJ5Fw_bW5" role="37wK5m">
+                      <property role="Xl_RC" value="Select all" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5gaq_OPmia8" role="3cqZAp">
+              <node concept="2OqwBi" id="5gaq_OPmiVk" role="3clFbG">
+                <node concept="37vLTw" id="5gaq_OPmia6" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5gaq_OP30mt" resolve="panel" />
+                </node>
+                <node concept="liA8E" id="5gaq_OPmjKX" role="2OqNvi">
+                  <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
+                  <node concept="37vLTw" id="5gaq_OPmjP6" role="37wK5m">
+                    <ref role="3cqZAo" node="2dUJ5Fw_bW1" resolve="selectAll" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2dUJ5Fw_IAg" role="3cqZAp">
+              <node concept="2OqwBi" id="2dUJ5Fw_JgS" role="3clFbG">
+                <node concept="pncrf" id="2dUJ5Fw_IAf" role="2Oq$k0" />
+                <node concept="2qgKlT" id="2dUJ5Fw_JIN" role="2OqNvi">
+                  <ref role="37wK5l" to="pvwr:5gaq_OPmS9V" resolve="addSelectAllListener" />
+                  <node concept="37vLTw" id="2dUJ5Fw_JUI" role="37wK5m">
+                    <ref role="3cqZAo" node="2dUJ5Fw_bW1" resolve="selectAll" />
+                  </node>
+                  <node concept="1Q80Hx" id="2dUJ5Fw_Kx9" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="5gaq_OPmdZ6" role="3cqZAp">
+              <node concept="3cpWsn" id="5gaq_OPmdZ7" role="3cpWs9">
+                <property role="TrG5h" value="deselectAll" />
+                <node concept="3uibUv" id="5gaq_OPmdZ8" role="1tU5fm">
+                  <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
+                </node>
+                <node concept="2ShNRf" id="5gaq_OPmeQ8" role="33vP2m">
+                  <node concept="1pGfFk" id="5gaq_OPmfkq" role="2ShVmc">
+                    <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                    <node concept="Xl_RD" id="5gaq_OPmfoi" role="37wK5m">
+                      <property role="Xl_RC" value="Deselect all" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2dUJ5Fw_cS8" role="3cqZAp">
+              <node concept="2OqwBi" id="2dUJ5Fw_cS9" role="3clFbG">
+                <node concept="37vLTw" id="2dUJ5Fw_cSa" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5gaq_OP30mt" resolve="panel" />
+                </node>
+                <node concept="liA8E" id="2dUJ5Fw_cSb" role="2OqNvi">
+                  <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
+                  <node concept="37vLTw" id="2dUJ5Fw_cSc" role="37wK5m">
+                    <ref role="3cqZAo" node="5gaq_OPmdZ7" resolve="deselectAll" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2dUJ5Fw__RE" role="3cqZAp">
+              <node concept="2OqwBi" id="2dUJ5Fw__RF" role="3clFbG">
+                <node concept="pncrf" id="2dUJ5Fw_HRl" role="2Oq$k0" />
+                <node concept="2qgKlT" id="2dUJ5Fw__RH" role="2OqNvi">
+                  <ref role="37wK5l" to="pvwr:5gaq_OPmTgG" resolve="addDeselectAllListener" />
+                  <node concept="37vLTw" id="2dUJ5Fw_BK6" role="37wK5m">
+                    <ref role="3cqZAo" node="5gaq_OPmdZ7" resolve="deselectAll" />
+                  </node>
+                  <node concept="1Q80Hx" id="2dUJ5Fw__RJ" role="37wK5m" />
                 </node>
               </node>
             </node>
