@@ -1,0 +1,9 @@
+/classes_gen/*
+/generator/classes_gen/*
+/generator/source_gen.caches/*
+/generator/source_gen/*
+/sandbox/classes_gen/*
+/sandbox/source_gen.caches/*
+/sandbox/source_gen/*
+/source_gen.caches/*
+/source_gen/*
