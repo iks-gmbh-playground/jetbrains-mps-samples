@@ -29,5 +29,5 @@ This is another sample language with a more technical background.
 Users can specify the relevant data for the creation of a WSDL file for SOAP webservices in a more concise format.
 The WSDL file is then provided as the generation result. This is an example for the generation to XML.
 The language checks whether the values entered for minOccurs and maxOccurs make sense.
-A constraint is in place that makes sure that defined classes (custom types) cannot refer to themselves.
+A constraint is in place that makes sure that defined classes (custom types) can not refer to classes from other WSDLs and also not to themselves.
 The language also contains an example of Accessory Models by offering predefined (primitive) types.
